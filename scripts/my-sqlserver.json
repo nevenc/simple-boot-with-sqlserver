@@ -1,0 +1,24 @@
+{
+    "resourceGroup": "pcf01-servicebroker-database",
+    "location": "West Europe",
+    "sqlServerName": "azure-examples-cf-pivotal-play-server",
+    "sqlServerParameters": {
+        "allowSqlServerFirewallRules": [
+             {
+                 "ruleName": "ert",
+                 "startIpAddress": "52.233.160.220",
+                 "endIpAddress": "52.233.160.220"
+             }
+         ],
+        "properties": {
+            "administratorLogin": "my-sqlserver-user",
+            "administratorLoginPassword": "SomeComplicatedPasswordWithMoreThan6Words!"
+        }
+    },
+    "sqldbName": "azure-examples-cf-my-sqlserver",
+    "sqldbParameters": {
+        "properties": {
+            "collation": "SQL_Latin1_General_CP1_CI_AS"
+        }
+    }
+}

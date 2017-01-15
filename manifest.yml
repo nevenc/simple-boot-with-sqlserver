@@ -1,0 +1,9 @@
+---
+applications:
+- name: simple-boot-with-sqlserver
+  instances: 1
+  path: target/simple-boot-with-sqlserver-0.0.1-SNAPSHOT.jar
+  services:
+    - my-sqlserver
+  env:
+    SPRING_PROFILES_ACTIVE: sqlserver,cloud
